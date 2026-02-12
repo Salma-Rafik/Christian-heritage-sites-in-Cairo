@@ -1,7 +1,7 @@
 var wms_layers = [];
 
 var format_Cairo_Governorate_0 = new ol.format.GeoJSON();
-var features_Cairo_Governorate_0 = format_Cairo_Governorate_0.readFeatures(json_Cairo_Governorate_0, 
+var features_Cairo_Governorate_0 = format_Cairo_Governorate_0.readFeatures(jsonSource_Cairo_Governorate_0, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_Cairo_Governorate_0 = new ol.source.Vector({
     attributions: ' ',
