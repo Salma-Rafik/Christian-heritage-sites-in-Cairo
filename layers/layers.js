@@ -12,7 +12,7 @@ var lyr___0 = new ol.layer.Vector({
                 source:jsonSource___0, 
                 style: style___0,
                 popuplayertitle: 'محافظة_القاهرة',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/__0.png" /> محافظة_القاهرة'
             });
 var format__1 = new ol.format.GeoJSON();
@@ -27,7 +27,7 @@ var lyr__1 = new ol.layer.Vector({
                 source:jsonSource__1, 
                 style: style__1,
                 popuplayertitle: 'الأقسام',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/_1.png" /> الأقسام'
             });
 var format__2 = new ol.format.GeoJSON();
@@ -42,7 +42,7 @@ var lyr__2 = new ol.layer.Vector({
                 source:jsonSource__2, 
                 style: style__2,
                 popuplayertitle: 'الطرق',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/_2.png" /> الطرق'
             });
 var format___3 = new ol.format.GeoJSON();
@@ -57,7 +57,7 @@ var lyr___3 = new ol.layer.Vector({
                 source:jsonSource___3, 
                 style: style___3,
                 popuplayertitle: 'نهر_النيل',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/__3.png" /> نهر_النيل'
             });
 var format___4 = new ol.format.GeoJSON();
@@ -82,17 +82,17 @@ lyr___0.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'SHAPE_Leng': 'SHAPE_Leng',
 lyr__1.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'اسم_ا': 'اسم_ا', 'المنط': 'المنط', 'SHAPE_Leng': 'SHAPE_Leng', 'SHAPE_Area': 'SHAPE_Area', 'اسم__1': 'اسم__1', });
 lyr__2.set('fieldAliases', {'OBJECTID_1': 'OBJECTID_1', 'OBJECTID': 'OBJECTID', 'TYPE': 'TYPE', 'CODE': 'CODE', 'A_Name': 'A_Name', 'E_Name': 'E_Name', 'Shape_Leng': 'Shape_Leng', 'Shape_Le_1': 'Shape_Le_1', });
 lyr___3.set('fieldAliases', {'OBJECTID_1': 'OBJECTID_1', 'OBJECTID': 'OBJECTID', 'Arabic_Nam': 'Arabic_Nam', 'E_Name': 'E_Name', 'Shape_Leng': 'Shape_Leng', 'Shape_Le_1': 'Shape_Le_1', 'Shape_Area': 'Shape_Area', });
-lyr___4.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'id': 'id', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'name': 'name', 'descriptio': 'descriptio', 'Images': 'Images', });
+lyr___4.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'id': 'id', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'name': 'name', 'Images': 'Images', 'descriptio': 'descriptio', });
 lyr___0.set('fieldImages', {'OBJECTID': 'TextEdit', 'SHAPE_Leng': 'TextEdit', 'SHAPE_Area': 'TextEdit', });
 lyr__1.set('fieldImages', {'OBJECTID': 'TextEdit', 'اسم_ا': 'TextEdit', 'المنط': 'TextEdit', 'SHAPE_Leng': 'TextEdit', 'SHAPE_Area': 'TextEdit', 'اسم__1': 'TextEdit', });
 lyr__2.set('fieldImages', {'OBJECTID_1': 'TextEdit', 'OBJECTID': 'TextEdit', 'TYPE': 'TextEdit', 'CODE': 'TextEdit', 'A_Name': 'TextEdit', 'E_Name': 'TextEdit', 'Shape_Leng': 'TextEdit', 'Shape_Le_1': 'TextEdit', });
 lyr___3.set('fieldImages', {'OBJECTID_1': 'TextEdit', 'OBJECTID': 'TextEdit', 'Arabic_Nam': 'TextEdit', 'E_Name': 'TextEdit', 'Shape_Leng': 'TextEdit', 'Shape_Le_1': 'TextEdit', 'Shape_Area': 'TextEdit', });
-lyr___4.set('fieldImages', {'OBJECTID': 'TextEdit', 'id': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'name': 'TextEdit', 'descriptio': 'TextEdit', 'Images': 'TextEdit', });
+lyr___4.set('fieldImages', {'OBJECTID': 'TextEdit', 'id': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'name': 'TextEdit', 'Images': 'TextEdit', 'descriptio': 'TextEdit', });
 lyr___0.set('fieldLabels', {'OBJECTID': 'no label', 'SHAPE_Leng': 'no label', 'SHAPE_Area': 'no label', });
 lyr__1.set('fieldLabels', {'OBJECTID': 'no label', 'اسم_ا': 'inline label - always visible', 'المنط': 'no label', 'SHAPE_Leng': 'no label', 'SHAPE_Area': 'no label', 'اسم__1': 'no label', });
 lyr__2.set('fieldLabels', {'OBJECTID_1': 'no label', 'OBJECTID': 'no label', 'TYPE': 'no label', 'CODE': 'no label', 'A_Name': 'no label', 'E_Name': 'no label', 'Shape_Leng': 'no label', 'Shape_Le_1': 'no label', });
 lyr___3.set('fieldLabels', {'OBJECTID_1': 'no label', 'OBJECTID': 'no label', 'Arabic_Nam': 'no label', 'E_Name': 'no label', 'Shape_Leng': 'no label', 'Shape_Le_1': 'no label', 'Shape_Area': 'no label', });
-lyr___4.set('fieldLabels', {'OBJECTID': 'no label', 'id': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'name': 'inline label - always visible', 'descriptio': 'no label', 'Images': 'no label', });
+lyr___4.set('fieldLabels', {'OBJECTID': 'hidden field', 'id': 'hidden field', 'Latitude': 'hidden field', 'Longitude': 'hidden field', 'name': 'no label', 'Images': 'no label', 'descriptio': 'no label', });
 lyr___4.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
